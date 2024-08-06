@@ -1,8 +1,55 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useEffect, useState } from "react";
+import Menu from "./Menu";
+import Video from "./Video";
+
 
 export default function Home() {
+  const animals = [
+    {
+      name: "geyik",
+      videoUrl: "geyik.mp4",
+    },
+    {
+      name: "salyangoz",
+      videoUrl: "salyangoz.mp4",
+    },
+    {
+      name: "kedi",
+      videoUrl: "kedi.mp4",
+    },
+    {
+      name: "örümcek",
+      videoUrl: "örümcek.mp4",
+    },
+  ];
+
+  const [videoInfo, setVideoInfo] = useState(animals);
+  const [selectedVideo, setSelectedVideo] = useState();
+
+  const handleRadioChange = (e) => {
+    //console.log(e.target.value);
+    setSelectedVideo(e.target.value);
+  };
+
+  useEffect(() => {
+     //console.log(selectedVideo);
+  })
+
   return (
+    <div className={styles.myContainer}>
+      <h1 className={styles.myTitle}>Project 6: Video Player</h1>
+      <div>
+        <Menu videoInfo={videoInfo} onRadioChange={handleRadioChange} />
+      </div>
+      <div>
+        <Video selectedVideo={selectedVideo} />
+      </div>
+    </div>
+
+    /*
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
@@ -91,5 +138,6 @@ export default function Home() {
         </a>
       </div>
     </main>
+    */
   );
 }

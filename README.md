@@ -34,3 +34,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+////////////////////////////////////////////////////
+
+React, HTML video elementiyle çalışmak ve farklı videolar arasında geçiş yapmak için de kullanılabilir.
+
+Nasıl oluşturacaksınız?
+
+Projemizde, kullanıcıların bir radio input kullanarak birkaç farklı video arasında geçiş yapmalarına izin vereceğiz. 
+
+Sadece React formlardaki radio input’larıyla nasıl çalışılacağını değil, aynı zamanda prop’ları iki bileşenimize Menu,Video nasıl aktaracağımızı da çalışacağız.
+
+Özellikle alt bileşenden üst bileşenlerdeki state güncelleştirmek için fonksiyonların nasıl aktarılacağını hatırlayacağız. Bu modele lifting state denir ve React'te bilinmesi gereken önemli bir kalıptır.
+
+Çalışacağınız React konseptleri
+
+• React'teki radio input
+• Fonksiyonları prop ile iletme
+• React'te state’i yukarı kaldırma/lifting

@@ -228,3 +228,33 @@
     transform: rotate(0deg);
   }
 }
+
+/* My Styles */
+
+.myContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 6rem;
+  min-height: 100vh;*/
+  border: 1px solid blue;
+  background-color: darkslategrey;
+  height: fit-content;
+  color: white
+}
+
+.myTitle {
+  padding: 3px;
+}
+
+.myMenu {
+  padding: 10px;
+}
+
+.myVideo {
+  padding: 30px;
+}
+
+
+
